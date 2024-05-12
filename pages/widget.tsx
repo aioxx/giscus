@@ -45,7 +45,7 @@ export async function getServerSideProps({ query, res }: GetServerSidePropsConte
     res.setHeader('X-Frame-Options', 'DENY');
     return {
       redirect: {
-        destination: 'https://github.com/orgs/giscus/discussions/1298',
+        destination: 'https://github.com/aioxx/aioxx.github.io/discussions/6',
         permanent: false,
       },
     };
