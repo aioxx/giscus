@@ -32,16 +32,16 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
 
   contents[1] = `${afterConfig}\n## ${t('tryItOut')} 👇👇👇\n`;
 
-  const token = await getAppAccessToken('giscus/giscus').catch(() => '');
+  const token = await getAppAccessToken('aioxx/giscus').catch(() => '');
   const [contentBefore, contentAfter] = await Promise.all(
-    contents.map((section) => renderMarkdown(section, token, 'giscus/giscus')),
+    contents.map((section) => renderMarkdown(section, token, 'aioxx/giscus')),
   );
 
   const comment: IComment = {
     author: {
       avatarUrl: 'https://avatars.githubusercontent.com/in/106117',
-      login: 'giscus',
-      url: 'https://github.com/apps/giscus',
+      login: 'aioxx',
+      url: 'https://github.com/apps/aioxx',
     },
     authorAssociation: 'APP',
     bodyHTML: contentBefore,
@@ -57,7 +57,7 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
     replies: [],
     replyCount: 0,
     upvoteCount: 0,
-    url: 'https://github.com/giscus/giscus',
+    url: 'https://github.com/aioxx/giscus',
     viewerDidAuthor: false,
     viewerHasUpvoted: false,
     viewerCanUpvote: false,
