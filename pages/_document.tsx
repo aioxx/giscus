@@ -3,7 +3,7 @@ import { AvailableLanguage, getDir } from '../lib/i18n';
 import { getThemeUrl, resolveTheme } from '../lib/utils';
 
 const meta = {
-  title: 'giscus',
+  title: 'aioxx',
   description: 'A comments widget built on GitHub Discussions.',
   image:
     'https://opengraph.githubassets.com/4f866d5b634e7cd5422af77f8dbfb6d48dd288b7c5c18326544c1973210320ed/giscus/giscus',
@@ -21,7 +21,7 @@ class CustomDocument extends Document {
       <Html dir={getDir(this.props.locale as AvailableLanguage)}>
         <Head>
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@laymonage" />
+          <meta name="twitter:site" content="@anonbdpro" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://api.github.com" />
           <link rel="preconnect" href="https://avatars3.githubusercontent.com" />
